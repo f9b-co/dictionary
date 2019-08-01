@@ -6,62 +6,62 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.PastOrPresent;
 
 public class Invoice {
-	
-	private Long id;
 
-	@NotEmpty
-	private String reference;
-	
-	@PastOrPresent
-	private LocalDate date;
+    private Long id;
 
-	private double amount;
+    @NotEmpty
+    private String reference;
 
-	private boolean paid = false;
+    @PastOrPresent
+    private LocalDate date;
 
-	public Invoice(String reference, LocalDate date, double amount) {
-		this.reference = reference;
-		this.date = date;
-		this.amount = amount;
-	}
+    private double amount;
 
-		public String getReference() {
-		return reference;
-	}
+    private boolean paid = false;
 
-	public void setReference(String reference) {
-		this.reference = reference;
-	}
+    public Invoice(String reference, LocalDate date, double amount) {
+	this.reference = reference;
+	this.date = date;
+	this.amount = amount;
+    }
 
-	public LocalDate getDate() {
-		return date;
-	}
+    public String getReference() {
+	return reference;
+    }
 
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
+    public void setReference(String reference) {
+	this.reference = reference;
+    }
 
-	public double getAmount() {
-		return amount;
-	}
+    public LocalDate getDate() {
+	return date;
+    }
 
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
+    public void setDate(LocalDate date) {
+	this.date = date;
+    }
 
-	public boolean isPaid() {
-		return paid;
-	}
+    public double getAmount() {
+	return amount;
+    }
 
-	public void setPaid(boolean paid) {
-		this.paid = paid;
-	}
+    public void setAmount(double amount) {
+	this.amount = amount;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public boolean isPaid() {
+	return paid;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
+    public void setPaid(boolean paid) {
+	this.paid = paid;
+    }
+
+    public Long getId() {
+	return id;
+    }
+
+    public void setId(Long id) {
+	this.id = id;
     }
 }
